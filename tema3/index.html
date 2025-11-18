@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Tema 3 — Busca em Espaços de Estados</title>
+        <link rel="stylesheet" href="../02/style.css">
+</head>
+<body>
+<header>
+        <h1>Tema 3</h1>
+</header>
+<main>
+<section>
+<h2>1 As estruturas e as estratégias para a busca em espaços de estados</h2>
+<h3>Sistemas de inteligência artificial</h3>
+<p>A inteligência artificial é uma área da ciência que estuda e descreve métodos que incorporam aspectos da inteligência observável. Em seu artigo, McCarthy (2007) aborda, de uma forma muito interessante, aspectos da inteligência artificial. Resumidamente, o que temos são modelos, algoritmos e arquiteturas combinados para resolver problemas utilizando, para isso, programas de computadores.</p>
+<p>Um sistema de inteligência artificial é composto por:</p>
+<ul>
+        <li>Agentes</li>
+        <li>Ambientes</li>
+</ul>
+<p>Os agentes agem em um ambiente e um ambiente pode conter outros agentes.</p>
+<p><strong>Um agente</strong> é qualquer coisa que tem a capacidade de perceber seu ambiente por meio de sensores e atuar nesse ambiente por meio de atuadores.</p>
+
+<hr>
+
+<h4>Tipos de agentes (exemplos)</h4>
+<p><strong>Agente humano</strong><br>Possui órgãos sensoriais (sensores) como olhos, ouvidos, nariz, língua e pele, e atuadores como mãos, pernas e boca.</p>
+<p><strong>Agente robótico</strong><br>Tem sensores (câmeras, etc.) e atuadores (motores).</p>
+<p><strong>Agente de software</strong><br>É acionado por eventos e processa entrada de dados.</p>
+
+<hr>
+
+<h4>Terminologia relacionada ao agente (Russell &amp; Norvig, 2004)</h4>
+<dl>
+    <dt>Medida de desempenho do agente</dt>
+    <dd>Forma de medir o grau de sucesso do agente por meio de critérios estabelecidos (por exemplo, percentual de acerto).</dd>
+
+    <dt>Comportamento do agente</dt>
+    <dd>Ações realizadas pelo agente em função da sequência de percepções recebidas.</dd>
+
+    <dt>Percepção</dt>
+    <dd>Entradas recebidas pelos sensores do agente.</dd>
+
+    <dt>Sequência de percepção</dt>
+    <dd>Histórico do que foi percebido pelo agente ao longo do tempo.</dd>
+
+    <dt>Função do agente</dt>
+    <dd>Mapa que relaciona uma ação à sequência de percepções.</dd>
+
+    <dt>Função de utilidade</dt>
+    <dd>Mede preferências e auxilia a escolher estados melhores, incorporando incerteza quando necessário.</dd>
+</dl>
+
+<p>Outro conceito importante é o de <strong>racionalidade</strong>: capacidade do agente de tomar ações que maximizem sua medida de desempenho com base em sua sequência de percepções e conhecimento prévio.</p>
+
+<p>A racionalidade depende de:</p>
+<ul>
+    <li>Medidas de desempenho</li>
+    <li>Sequência de percepção</li>
+    <li>Conhecimento prévio do ambiente</li>
+    <li>Ações disponíveis ao agente</li>
+</ul>
+<p>Um agente racional procura escolher a ação que o torne mais bem-sucedido dado seu histórico de percepções.</p>
+
+<h3>Estrutura de agentes inteligentes</h3>
+<p>Combinação entre arquitetura (máquina) e programa agente (implementação da função do agente). Existem várias classificações:</p>
+
+<hr>
+<h4>Agentes de reflexo simples</h4>
+<p>Escolhem ações com base apenas na percepção atual; usam regras condição→ação; são racionais apenas se a decisão correta puder ser tomada com base na percepção atual.</p>
+
+<h4>Agentes de reflexo baseados em modelos</h4>
+<p>Usam um modelo do mundo e mantêm um estado interno que representa aspectos não observados diretamente; atualizam o estado com base no histórico de percepções e no modelo de transição.</p>
+
+<h4>Agentes baseados em objetivo</h4>
+<p>Escolhem ações para atingir metas desejáveis; mais flexíveis porque usam conhecimento do modelo para suportar decisões.</p>
+
+<h4>Agentes baseados em utilidades</h4>
+<p>Escolhem ações com base em uma função de utilidade que atribui preferência a estados, buscando maximizar a utilidade esperada.</p>
+
+<p>Quando metas conflitam, associamos medidas de incerteza e recompensas para balancear prioridades.</p>
+
+<h3>A natureza dos ambientes</h3>
+<p>O ambiente em que o agente opera é fundamental para o modelo. Pode variar de ambientes completamente artificiais (entrada por teclado, banco de dados) até ambientes físicos com sensores e atuadores (IoT, robótica).</p>
+
+<p>Propriedades importantes do ambiente:</p>
+<ul>
+    <li><strong>Discreto ou contínuo</strong> — ex.: xadrez (discreto) vs. robô em 3D (contínuo).</li>
+    <li><strong>Observável ou parcialmente observável</strong> — se o agente pode determinar o estado completo pelo que percebe.</li>
+    <li><strong>Estático ou dinâmico</strong> — se o ambiente muda enquanto o agente age.</li>
+    <li><strong>Com presença de outros agentes</strong> — ambiente multiagente.</li>
+    <li><strong>Acessível ou não</strong> — se o agente pode acessar o estado completo.</li>
+    <li><strong>Determinístico ou não determinístico</strong> — se o próximo estado é completamente determinado pelo estado atual e ações.</li>
+    <li><strong>Episódico ou sequencial</strong> — episódios independentes ou ações que afetam decisões futuras (ex.: xadrez é sequencial).</li>
+</ul>
+
+<p>[[teste de Turing]]</p>
+
+<h3>Terminologia dos algoritmos de busca</h3>
+<p>Os algoritmos de busca resolvem problemas modelados em espaços de estados. Alguns termos chave:</p>
+<dl>
+    <dt>Estado</dt>
+    <dd>Configuração do sistema. Verifica-se se o estado corrente é o objetivo.</dd>
+
+    <dt>Operador</dt>
+    <dd>Transforma um estado em outro.</dd>
+
+    <dt>Espaço de busca</dt>
+    <dd>Conjunto de soluções possíveis.</dd>
+
+    <dt>Estado inicial</dt>
+    <dd>Estado em que a pesquisa começa.</dd>
+
+    <dt>Função objetivo (teste de objetivo)</dt>
+    <dd>Função que verifica se um estado é o objetivo.</dd>
+
+    <dt>Problema de busca</dt>
+    <dd>Instância composta por espaço de busca, estado inicial e função objetivo.</dd>
+
+    <dt>Grafo do espaço do problema</dt>
+    <dd>Representação dos estados (nós) e operadores (arestas).</dd>
+
+    <dt>Profundidade de um problema</dt>
+    <dd>Sequência de operadores do estado inicial ao objetivo.</dd>
+
+    <dt>Complexidade do espaço</dt>
+    <dd>Quantidade máxima de memória necessária para encontrar uma solução.</dd>
+
+    <dt>Completude</dt>
+    <dd>Propriedade que garante que o algoritmo encontrará uma solução, se houver.</dd>
+
+    <dt>Admissibilidade</dt>
+    <dd>Propriedade de um algoritmo encontrar uma solução ótima quando aplicável.</dd>
+
+    <dt>Fator de ramificação</dt>
+    <dd>Número médio de nós filhos no grafo.</dd>
+
+    <dt>Custo do caminho</dt>
+    <dd>Função que atribui custo numérico a cada caminho escolhido.</dd>
+
+    <dt>Solução</dt>
+    <dd>Sequência de ações do nó inicial ao objetivo (pode não ser ótima).</dd>
+
+    <dt>Solução ótima / Otimalidade</dt>
+    <dd>Solução com menor custo; otimalidade garante que o algoritmo retorna a melhor solução.</dd>
+</dl>
+
+<h3>Espaço de estados</h3>
+<p>Os algoritmos de busca no espaço de estados modelam problemas onde agentes executam ações que modificam o estado corrente até atingir a solução. Uma instância de problema é definida por:</p>
+<ul>
+    <li>Estado inicial</li>
+    <li>Conjunto de ações</li>
+    <li>Descrição do objetivo</li>
+</ul>
+
+<p>Exemplo: robô que rega duas plantas.</p>
+<p>Estados podem ser representados pela estrutura <code>[X, P1, P2]</code>, onde:</p>
+<ul>
+    <li><strong>X</strong> — posição do robô: 0 (repouso), 1 (planta1), 2 (planta2).</li>
+    <li><strong>P1</strong> — sensor planta1: 1 (precisa regar) ou 0.</li>
+    <li><strong>P2</strong> — sensor planta2: 1 ou 0.</li>
+</ul>
+
+<p>Exemplo de estado: <code>[1,1,0]</code> (robô na planta 1; planta1 precisa; planta2 não).</p>
+
+<p>Conjunto de estados do exemplo (S) contém 12 elementos, dado por |S| = |X| · |P1| · |P2| = 3 · 2 · 2 = 12.</p>
+
+<h3>Representação das ações</h3>
+<p>Usa-se a notação <code>Operador(ação, estado_atual, próximo_estado)</code>. Exemplos para planta 1 e 2 apresentados no texto original (ir_para, regar, voltar).</p>
+
+<h3>Estratégias de busca</h3>
+<p>Determinam a ordem em que os nós são explorados. Três estratégias principais:</p>
+
+<h4>Amplitude primeiro (BFS)</h4>
+<p>Expande todos os nós vizinhos antes de avançar para o próximo nível; conhecido como breadth-first search.</p>
+
+<h4>Melhor primeiro (best-first)</h4>
+<p>Expande o nó mais promissor segundo uma métrica (custo ou heurística); expande em ordem não decrescente de custo quando aplicável.</p>
+
+<h4>Profundidade primeiro (DFS)</h4>
+<p>Explora o nó gerado mais recentemente; conhecido como depth-first search.</p>
+
+<p>A escolha da estratégia depende do problema — cada estratégia tem trade-offs de memória, completude e otimalidade.</p>
+
+<h3>Exercícios (Questões)</h3>
+<section>
+<h4>Questão 1</h4>
+<p>Selecione a alternativa correta sobre a solução de um problema no espaço de estados.</p>
+<ol type="A">
+    <li>Corresponde a uma sequência de escolha de ações.</li>
+    <li>Refere-se à solução ótima do problema.</li>
+    <li>É qualquer estado que pertença ao conjunto de estados do problema.</li>
+    <li>Corresponde a um estado que satisfaça algumas condições preestabelecidas de otimalidade.</li>
+    <li>É uma composição entre um determinado estado e a ação que levou até ele.</li>
+</ol>
+<p><strong>Resposta:</strong> A. Corresponde a uma sequência de escolha de ações.</p>
+
+<h4>Questão 2</h4>
+<p>Selecione a alternativa correta sobre os métodos de busca no espaço de estados.</p>
+<ol type="A">
+    <li>São considerados métodos muito eficientes por sempre garantirem a obtenção da solução ótima de um problema.</li>
+    <li>O espaço de busca é constituído pelos estados e pelas ações que compõem o ambiente em que o agente está contextualizado.</li>
+    <li>São caracterizados pela velocidade com que chegam à solução ótima.</li>
+    <li>São aplicados apenas para resolver problemas teóricos.</li>
+    <li>Não podem ser aplicados para programar robôs.</li>
+</ol>
+<p><strong>Resposta:</strong> B. O espaço de busca representa as configurações que um sistema pode assumir quando são aplicadas ações.</p>
+</section>
+
+<h2>2 Aspectos relacionados à busca cega e à busca heurística</h2>
+<p>A inteligência artificial estuda métodos para que algoritmos reproduzam comportamentos inteligentes. Agentes racionais tomam decisões para atingir uma solução-alvo (meta).</p>
+
+<p><strong>Exemplo.</strong> Robô aspirador: objetivo — manter salas limpas; o sequenciamento de ações forma um espaço de estados e pode ser resolvido por algoritmos de busca.</p>
+
+<p>Um problema de busca consiste em três partes:</p>
+<ul>
+    <li>Espaço de estados — todos os estados possíveis.</li>
+    <li>Estado inicial — onde a busca começa.</li>
+    <li>Teste de objetivo — função que verifica se o estado atual é objetivo.</li>
+</ul>
+
+<p>O sequenciamento das ações que transforma o estado inicial no objetivo é a solução do problema de busca.</p>
+
+<p><em>Tipos de algoritmos de busca fundamentais</em></p>
+
+<p>... (continuação dos tópicos sobre buscas cegas e heurísticas — mantenha o texto conforme o material didático ou indique se deseja que eu complemente com exemplos como A*, busca gulosa, custo uniforme etc.)</p>
+
+</section>
+</main>
+<footer class="footer">
+        <ul class="footer-links">
+                <li><a href="https://github.com/GersonESantos/ImerssaoDe10" target="_blank">GitHub</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+        </ul>
+</footer>
+</body>
+</html>
