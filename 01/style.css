@@ -1,7 +1,15 @@
+:root {
+  --fundo-principal: #baafaf;
+  --texto: #222222;
+  --texto-inverso: #ffffff;
+  --destaque: #007BFF;
+  --destaque-inverso: #88a8c9;
+  --fundo-card: #ffffff;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: gray;
+    background-color: var(--fundo-principal);
 }
