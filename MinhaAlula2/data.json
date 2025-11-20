@@ -1,0 +1,72 @@
+[
+    {
+        "name": "JavaScript",
+        "version": "ES2023",
+        "description": "O JS é uma linguagem de programação leve, interpretada e baseada em objetos.",
+        "ano:": 1995,
+        "link": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+    },
+    {
+        "name": "Python",
+        "version": "3.12",
+        "description": "Linguagem de programação de alto nível, conhecida por sua simplicidade e legibilidade.",
+        "ano:": 1991,
+        "link": "https://www.python.org/"
+    },
+    {
+        "name": "Java",
+        "version": "21",
+        "description": "Linguagem de programação orientada a objetos, popular para aplicações empresariais e Android.",
+        "ano:": 1995,
+        "link": "https://www.java.com/"
+    },
+    {
+        "name": "C#",
+        "version": "12",
+        "description": "Linguagem moderna e orientada a objetos desenvolvida pela Microsoft para a plataforma .NET.",
+        "ano:": 2000,
+        "link": "https://docs.microsoft.com/pt-br/dotnet/csharp/"
+    },
+    {
+        "name": "TypeScript",
+        "version": "5.3",
+        "description": "Um superset do JavaScript que adiciona tipagem estática opcional à linguagem.",
+        "ano:": 2012,
+        "link": "https://www.typescriptlang.org/"
+    },
+    {
+        "name": "Go",
+        "version": "1.21",
+        "description": "Linguagem de programação compilada e concorrente desenvolvida pelo Google.",
+        "ano:": 2009,
+        "link": "https://go.dev/"
+    },
+    {
+        "name": "Rust",
+        "version": "1.74",
+        "description": "Linguagem de programação focada em segurança, velocidade e concorrência.",
+        "ano:": 2010,
+        "link": "https://www.rust-lang.org/"
+    },
+    {
+        "name": "HTML",
+        "version": "5",
+        "description": "Linguagem de marcação padrão para criar páginas e aplicações web.",
+        "ano:": 1993,
+        "link": "https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+    },
+    {
+        "name": "CSS",
+        "version": "3",
+        "description": "Linguagem de folha de estilos para descrever a apresentação de documentos HTML.",
+        "ano:": 1996,
+        "link": "https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+    },
+    {
+        "name": "SQL",
+        "version": "SQL:2023",
+        "description": "Linguagem padrão para gerenciar e manipular bancos de dados relacionais.",
+        "ano:": 1974,
+        "link": "https://www.iso.org/standard/84347.html"
+    }
+]
