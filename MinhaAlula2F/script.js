@@ -21,11 +21,13 @@ async function iniciarBusca(){
 
     renderizarCards(dados);
 
+//  "required": ["nome", "descricao", "data_criacao", "link", "tags"]
+
     const termoBusca = (campoBusca?.value || '').toLowerCase();
     if (termoBusca) {
         const dadosFiltrados = dados.filter(dado =>
-            (dado.name || '').toLowerCase().includes(termoBusca) ||
-            (dado.description || '').toLowerCase().includes(termoBusca)
+            (dado.nome || '').toLowerCase().includes(termoBusca) ||
+            (dado.descricao || '').toLowerCase().includes(termoBusca)
         );
 
         renderizarCards(dadosFiltrados);
@@ -39,9 +41,9 @@ function renderizarCards(dados)
         let article = document.createElement('article');
         article.classList.add('card');
 
-        const nome = dado.name || '';
+        const nome = dado.nome || '';
         const ano = dado.ano || '';
-        const descricao = dado.description || '';
+        const descricao = dado.descricao || '';
         const link = dado.link || '#';
 
         const h2 = document.createElement('h2');
