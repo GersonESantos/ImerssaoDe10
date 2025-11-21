@@ -5,15 +5,17 @@ async function iniciarBusca(){
     dados = await resposta.json();
     renderizarCards(dados);
 }
-function renderizarCards(dados){
-    for(let dado of dados){
+function renderizarCards(dados)
+{
+    for(let dado of dados)
+    {
         let article = document.createElement('article');
         article.classList.add('card');
         article.innerHTML = `
-            <h2>JavaScript</h2>
-            <p>Este é um parágrafo de exemplo para mostrar como o texto aparece. <strong>Termo importante:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript">Leia mais</a>
-
+            <h2>${dado.name}</h2>
+            <p>${dado.ano}</p>
+            <p>${dado.description}</p>
+            <a href="${dado.link}">Leia mais</a>
         `;
         cardContainer.appendChild(article);
     }
