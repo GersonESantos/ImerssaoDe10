@@ -302,5 +302,305 @@
       "observabilidade",
       "timeseries db"
     ]
+  },
+  {
+    "nome": "Haskell",
+    "descricao": "Uma linguagem de programação puramente funcional, tipada estaticamente, focada em segurança e concisão.",
+    "data_criacao": "1990",
+    "link": "https://www.haskell.org/",
+    "tags": [
+      "linguagem de programação",
+      "funcional",
+      "backend",
+      "pesquisa"
+    ]
+  },
+  {
+    "nome": "Elixir",
+    "descricao": "Linguagem dinâmica e funcional que roda na Erlang Virtual Machine (BEAM), ideal para sistemas distribuídos e de alta concorrência.",
+    "data_criacao": "2012",
+    "link": "https://elixir-lang.org/",
+    "tags": [
+      "linguagem de programação",
+      "funcional",
+      "concorrência",
+      "backend"
+    ]
+  },
+  {
+    "nome": "Phoenix Framework",
+    "descricao": "Um framework web produtivo que não sacrifica a performance, construído sobre a linguagem Elixir.",
+    "data_criacao": "2014",
+    "link": "https://www.phoenixframework.org/",
+    "tags": [
+      "framework web",
+      "backend",
+      "elixir",
+      "tempo real"
+    ]
+  },
+  {
+    "nome": "C#",
+    "descricao": "Linguagem de programação moderna, orientada a objetos, desenvolvida pela Microsoft, amplamente usada em aplicações empresariais e jogos (Unity).",
+    "data_criacao": "2000",
+    "link": "https://docs.microsoft.com/pt-br/dotnet/csharp/",
+    "tags": [
+      "linguagem de programação",
+      "backend",
+      "games",
+      "microsoft"
+    ]
+  },
+  {
+    "nome": ".NET (Core)",
+    "descricao": "Framework de desenvolvimento moderno, de código aberto e multiplataforma mantido pela Microsoft, utilizado para construir diversos tipos de aplicações.",
+    "data_criacao": "2016",
+    "link": "https://dotnet.microsoft.com/",
+    "tags": [
+      "framework",
+      "backend",
+      "multiplataforma",
+      "microsoft"
+    ]
+  },
+  {
+    "nome": "MariaDB",
+    "descricao": "Um sistema de gerenciamento de banco de dados relacional (RDBMS), desenvolvido como um fork de código aberto do MySQL.",
+    "data_criacao": "2009",
+    "link": "https://mariadb.org/",
+    "tags": [
+      "banco de dados",
+      "relacional",
+      "open source",
+      "sql"
+    ]
+  },
+  {
+    "nome": "Apache Cassandra",
+    "descricao": "Um sistema de gerenciamento de banco de dados NoSQL de código aberto, distribuído e com alta disponibilidade e escalabilidade.",
+    "data_criacao": "2008",
+    "link": "https://cassandra.apache.org/",
+    "tags": [
+      "banco de dados",
+      "nosql",
+      "distribuído",
+      "big data"
+    ]
+  },
+  {
+    "nome": "RabbitMQ",
+    "descricao": "Um broker de mensagens de código aberto que implementa o Advanced Message Queuing Protocol (AMQP), facilitando a comunicação assíncrona.",
+    "data_criacao": "2007",
+    "link": "https://www.rabbitmq.com/",
+    "tags": [
+      "message broker",
+      "infraestrutura",
+      "mensageria",
+      "assíncrono"
+    ]
+  },
+  {
+    "nome": "Vercel",
+    "descricao": "Plataforma de hospedagem e deployment focada em performance para frontends modernos, conhecida por sua integração com frameworks JAMstack.",
+    "data_criacao": "2015",
+    "link": "https://vercel.com/",
+    "tags": [
+      "cloud",
+      "deployment",
+      "frontend",
+      "serverless"
+    ]
+  },
+  {
+    "nome": "Cloudflare Workers",
+    "descricao": "Uma plataforma serverless que permite executar código JavaScript/WebAssembly na rede global de borda da Cloudflare, próximo ao usuário final.",
+    "data_criacao": "2017",
+    "link": "https://workers.cloudflare.com/",
+    "tags": [
+      "serverless",
+      "edge computing",
+      "cloud",
+      "performance"
+    ]
+  },
+  {
+    "nome": "PyTorch",
+    "descricao": "Uma biblioteca de machine learning de código aberto baseada na linguagem Python, amplamente utilizada em pesquisa e prototipagem.",
+    "data_criacao": "2016",
+    "link": "https://pytorch.org/",
+    "tags": [
+      "machine learning",
+      "biblioteca",
+      "inteligência artificial",
+      "pesquisa"
+    ]
+  },
+  {
+    "nome": "TensorFlow",
+    "descricao": "Uma plataforma de código aberto ponta a ponta para aprendizado de máquina, desenvolvida principalmente pelo Google.",
+    "data_criacao": "2015",
+    "link": "https://www.tensorflow.org/",
+    "tags": [
+      "machine learning",
+      "deep learning",
+      "google",
+      "inteligência artificial"
+    ]
+  },
+  {
+    "nome": "Vagrant",
+    "descricao": "Ferramenta para criar e configurar ambientes de desenvolvimento leves, reproduzíveis e portáteis usando máquinas virtuais.",
+    "data_criacao": "2010",
+    "link": "https://www.vagrantup.com/",
+    "tags": [
+      "devops",
+      "virtualização",
+      "ferramenta",
+      "ambiente de desenvolvimento"
+    ]
+  },
+  {
+    "nome": "Ansible",
+    "descricao": "Um motor de automação de código aberto para provisionamento de software, gerenciamento de configuração e implantação de aplicativos.",
+    "data_criacao": "2012",
+    "link": "https://www.ansible.com/",
+    "tags": [
+      "devops",
+      "automação",
+      "gerenciamento de configuração",
+      "provisionamento"
+    ]
+  },
+  {
+    "nome": "Jira",
+    "descricao": "Ferramenta da Atlassian usada para rastreamento de issues, gerenciamento de projetos ágeis e planejamento de software.",
+    "data_criacao": "2002",
+    "link": "https://www.atlassian.com/software/jira",
+    "tags": [
+      "gestão de projetos",
+      "agile",
+      "ferramenta",
+      "scrum"
+    ]
+  },
+  {
+    "nome": "Trello",
+    "descricao": "Ferramenta visual de gerenciamento de trabalho baseada no sistema Kanban, ideal para rastreamento de tarefas e colaboração em equipe.",
+    "data_criacao": "2011",
+    "link": "https://trello.com/",
+    "tags": [
+      "gestão de projetos",
+      "kanban",
+      "ferramenta",
+      "colaboração"
+    ]
+  },
+  {
+    "nome": "Clojure",
+    "descricao": "Um dialeto da linguagem Lisp, focado em programação funcional e concorrência, que roda na Java Virtual Machine (JVM).",
+    "data_criacao": "2007",
+    "link": "https://clojure.org/",
+    "tags": [
+      "linguagem de programação",
+      "funcional",
+      "jvm",
+      "backend"
+    ]
+  },
+  {
+    "nome": "Erlang",
+    "descricao": "Linguagem de programação para sistemas distribuídos, tolerantes a falhas e de alta disponibilidade, usada em telecomunicações.",
+    "data_criacao": "1986",
+    "link": "https://www.erlang.org/",
+    "tags": [
+      "linguagem de programação",
+      "concorrência",
+      "telecom",
+      "backend"
+    ]
+  },
+  {
+    "nome": "Solidity",
+    "descricao": "Linguagem de programação orientada a contratos para escrever contratos inteligentes em plataformas de blockchain como Ethereum.",
+    "data_criacao": "2014",
+    "link": "https://docs.soliditylang.org/",
+    "tags": [
+      "blockchain",
+      "contratos inteligentes",
+      "linguagem de programação",
+      "criptomoedas"
+    ]
+  },
+  {
+    "nome": "WebAssembly (Wasm)",
+    "descricao": "Um formato de instrução binária de baixo nível para um stack-based virtual machine, projetado como um alvo de compilação para linguagens de alto nível.",
+    "data_criacao": "2017",
+    "link": "https://webassembly.org/",
+    "tags": [
+      "padrão",
+      "performance",
+      "compilação",
+      "web"
+    ]
+  },
+  {
+    "nome": "Deno",
+    "descricao": "Runtime seguro para JavaScript e TypeScript, criado pelo mesmo desenvolvedor do Node.js, com foco em segurança por padrão e módulos ES.",
+    "data_criacao": "2018",
+    "link": "https://deno.com/",
+    "tags": [
+      "runtime",
+      "backend",
+      "typescript",
+      "segurança"
+    ]
+  },
+  {
+    "nome": "Nginx",
+    "descricao": "Servidor web e proxy reverso de alto desempenho, balanceador de carga, e cache HTTP.",
+    "data_criacao": "2004",
+    "link": "https://www.nginx.com/",
+    "tags": [
+      "servidor web",
+      "infraestrutura",
+      "proxy reverso",
+      "devops"
+    ]
+  },
+  {
+    "nome": "Buddy",
+    "descricao": "Plataforma de CI/CD que permite construir, testar e implantar código automaticamente usando pipelines visuais fáceis de configurar.",
+    "data_criacao": "2007",
+    "link": "https://buddy.works/",
+    "tags": [
+      "ci/cd",
+      "devops",
+      "automação",
+      "deployment"
+    ]
+  },
+  {
+    "nome": "Figma",
+    "descricao": "Editor de gráficos vetoriais e ferramenta de prototipagem, baseado em nuvem, usado para design de interface de usuário (UI) e experiência (UX).",
+    "data_criacao": "2016",
+    "link": "https://www.figma.com/",
+    "tags": [
+      "design",
+      "prototipagem",
+      "ferramenta",
+      "ux/ui"
+    ]
+  },
+  {
+    "nome": "Zustand",
+    "descricao": "Uma solução de gerenciamento de estado minimalista e rápida para aplicações React, baseada em hooks e sem boilerplate.",
+    "data_criacao": "2020",
+    "link": "https://zustand.store/",
+    "tags": [
+      "biblioteca",
+      "frontend",
+      "gerenciamento de estado",
+      "react"
+    ]
   }
 ]
